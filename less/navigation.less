@@ -1,0 +1,60 @@
+// Navigation Styles here
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1%;
+  border: 5px solid @orange;
+  border-radius: 2rem;
+  padding: 1%;
+  width: 100%;
+  align-items: center;
+  background-color: @primary;
+
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+  }
+
+  .links {
+    // border: 1px solid red;
+    border-radius: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @secondary;
+    padding: .5%;
+
+    @media @phone {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: @white;
+      font-family: "Roboto";
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 2%;
+      margin: auto;
+      width: 50%;
+      white-space: nowrap;
+      background-color: @secondary;
+      text-align: center;
+      // border: 1px solid pink;
+      border-radius: 2rem;
+      justify-content: space-between;
+    }
+
+    a:hover{
+      background-color: @primary;
+    }
+  }
+}
+
+//Header Styles here

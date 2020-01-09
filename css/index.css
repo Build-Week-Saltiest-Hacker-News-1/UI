@@ -446,8 +446,9 @@ p {
 .row .profile:hover {
   border-left: 0.5px solid black;
   border-bottom: 0.5px solid black;
-  box-shadow: -2px 5px 5px #ca3030;
+  box-shadow: -4px 6px 6px #ca3030;
   box-sizing: border-box;
+  color: #692019;
 }
 .column {
   justify-content: flex-start;

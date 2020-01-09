@@ -1,9 +1,29 @@
 .about-content {
-
     width: 95%;
     margin: 0 auto;
-
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    @media @phone {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 9%;
+        
+    }
 }
+
+.role {
+    display:none;
+
+    @media @phone {
+        display:block;
+        margin: 8px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
 .row {
     display: flex;
     flex-wrap: nowrap;
@@ -11,36 +31,83 @@
     align-items: center;
     padding: 10px 5px;
     margin: 25px;
+    box-sizing: border-box;
+
+    .lead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+
+    }
+
+    div {
+        width:85%;
+        @media (max-width: 1000px){
+            width:85%;
+            img {
+                width: 12vw;
+            }
+
+            p {
+                padding-top: 3%;
+                line-height: 1.19;
+            }
+        }
+        @media @phone {
+            width:100%;
+            img {
+                width: 70vw;
+            }
+        }
+        
+    }
+
+    @media @phone {
+        flex-direction: column;
+        width: 90%;
+        margin: 25px 0;    
+    } // end media
+    
+    img {
+        width: 34%;
+        @media @phone {
+            width: 100%;
+        } // end media
+    } // end img
 
     .profile {
         border-left: 0.5px solid black;
         border-bottom:  0.5px solid black;
         box-shadow: -2px 5px 5px gray;
-        
-        img {
-            width: 34%;
-        } // close img
-    } // close profile
-} // close row
-
-    .column {
-        justify-content: flex-start;
-        width: 30%;
-        div {
-
-
-            h2{
-                font-size: 1.8rem;
-                padding: 0 8px;
-                text-align:center;
-            }
-
-            p {
-                margin: 0 10px;
-                height: 80px;
-                font-size: 1.3rem;
-            }
-
-        }
+        box-sizing: border-box;
+    }// close profile
+}// close row
+.column {
+    justify-content: flex-start;
+    width: 30%;
+    @media @phone {
+        width: 100%;
     }
-
+    div {
+         h2{
+            font-size: 1.8rem;
+            padding: 0 8px;
+            text-align:center;
+        }
+        p {
+            margin: 0;
+            height: 80px;
+            font-size: 1.5rem;
+            
+        }
+        @media @phone {
+            h2 {
+                margin-top: 5%;
+            }
+            p {
+                display: none;
+            }
+        }// end Media 
+    } //end Div
+} // end column

@@ -443,6 +443,12 @@ p {
   box-shadow: -2px 5px 5px gray;
   box-sizing: border-box;
 }
+.row .profile:hover {
+  border-left: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+  box-shadow: -2px 5px 5px #ca3030;
+  box-sizing: border-box;
+}
 .column {
   justify-content: flex-start;
   width: 30%;

@@ -2,7 +2,6 @@ body,
 html {
     background-color: @teal;
 }
-
 h1 {
   font-family: "Roboto";
   text-align: center;
@@ -10,14 +9,12 @@ h1 {
   font-weight: bold;
   font-size: 6vw;
 }
-
 h4 {
   font-family: "Roboto";
   font-size: 20px;
   text-align: center;
   color: @primary;
 }
-
 p {
   font-family: "Roboto";
   text-align: center;
@@ -25,12 +22,10 @@ p {
   font-size: 16px ;
   padding-left: 10%;
   padding-right: 10%;
-  
   // background-color: @secondary;
   // border: 5px solid @orange;
   // font-weight: bold;
 }
-
 .mainContainer {
   min-height: 100%;
   position: relative;
@@ -41,7 +36,6 @@ p {
   // background-size: cover;
   // border: 1px solid green;
 }
-
 .content-index {
   display:flex;
   justify-content: space-around;
@@ -50,11 +44,9 @@ p {
     width: 35px;
     margin-top: 2%;
   }
-
   @media @phone {
     flex-direction: column;
   }
-
   .content-left {
     display: flex;
     flex-direction:column;
@@ -69,7 +61,6 @@ p {
       display: none;
     }
   } // close content-left
-
   .content-right {
     display: flex;
     flex-direction:column;
@@ -83,18 +74,15 @@ p {
       display: none;
     }
   } // close content-right
-
   .content-center {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-top: 5%;
-
     h1 {
       margin-bottom: 0.5%;
     }
-
     p {
       width: 96%;
       font-size: 1.8rem;
@@ -103,13 +91,9 @@ p {
         width: 96%;
         font-size: 2.4rem;
       }
-
     }
-
   } // close content-center
-
 } // close content-index
-
 #slideshow {
   overflow: hidden;
   height: 20vmax;
@@ -119,34 +103,27 @@ p {
   // border: 5px solid @orange;
   border-radius: 2rem;
 }
-
 .slide-wrapper {
   width: 3500vw;
   -webkit-animation: slide 20s ease infinite;
 }
-
 .slide {
   float: left;
   height: 50vh;
   width: 50vw;
 }
-
 .slide:nth-child(1) {
   background: @blue;
 }
-
 .slide:nth-child(2) {
   background: @blue;
 }
-
 .slide:nth-child(3) {
   background: @blue;
 }
-
 .slide:nth-child(4) {
   background: @blue;
 }
-
 .slide-number {
   color: @white;
   margin: auto;
@@ -155,7 +132,6 @@ p {
   align-content: center;
   font-size: 3vw;
 }
-
 @keyframes slide {
   20% {
     margin-left: 0vw;
@@ -178,7 +154,4 @@ p {
   90% {
     margin-left: -150vw;
   }
- 
 }
-
-

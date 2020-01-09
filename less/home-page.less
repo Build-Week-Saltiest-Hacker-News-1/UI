@@ -1,7 +1,8 @@
 body,
 html {
-  height: 100%;
+  
   background-color: @teal;
+  
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
 
 h4 {
   font-family: "Roboto";
-  font-size: 10px;
+  font-size: 10vw;
   text-align: center;
   color: @primary;
 }
@@ -28,8 +29,9 @@ p {
 }
 
 .mainContainer {
-  height: 100%;
-  widows: 100%;
+  min-height: 100%;
+  
+  position: relative;
   background-color: @teal;
   // background-image: url(background.png);
   // background-position: center;
@@ -65,8 +67,8 @@ p {
 
 #slideshow {
   overflow: hidden;
-  height: 300px;
-  width: 500px;
+  height: 20vmax;
+  width: 50vw;
   margin: auto;
   margin-bottom: 1%;
   border: 5px solid @orange;
@@ -74,14 +76,14 @@ p {
 }
 
 .slide-wrapper {
-  width: 2912px;
-  -webkit-animation: slide 30s ease infinite;
+  width: 3500vw;
+  -webkit-animation: slide 10s ease infinite;
 }
 
 .slide {
   float: left;
-  height: 300px;
-  width: 500px;
+  height: 50vh;
+  width: 50vw;
 }
 
 .slide:nth-child(1) {
@@ -106,29 +108,32 @@ p {
   padding: 5%;
   text-align: center;
   align-content: center;
-  font-size: 4em;
+  font-size: 3vw;
 }
 
 @keyframes slide {
   20% {
-    margin-left: 0px;
+    margin-left: 0vw;
   }
   30% {
-    margin-left: -500px;
+    margin-left: -50vw;
   }
   50% {
-    margin-left: -500px;
+    margin-left: -50vw;
   }
   60% {
-    margin-left: -1000px;
+    margin-left: -100vw;
   }
   70% {
-    margin-left: -1000px;
+    margin-left: -100vw;
   }
   80% {
-    margin-left: -1500px;
+    margin-left: -150vw;
   }
   90% {
-    margin-left: -1500px;
+    margin-left: -150vw;
   }
+ 
 }
+
+

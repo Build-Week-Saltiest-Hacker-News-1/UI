@@ -4,12 +4,16 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 1%;
-  border: 5px solid @orange;
-  border-radius: 2rem;
-  padding: 1%;
+  border-bottom: 5px solid @orange;
+  // border-radius: 2rem;
+  padding: 5px;
   width: 100%;
   align-items: center;
   background-color: @primary;
+  
+  img{
+    width: 80px; 
+  }
   
 
   @media @phone {
@@ -18,47 +22,55 @@
     img{
       display: none;
     }
-    // justify-content: center;
+    
   }
-
+  
   .links {
+    display: flex;
     // border: 1px solid red;
     border-radius: 2rem;
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: @secondary;
+    justify-content: space-evenly;
+    align-items:center;
+    // background-color: @secondary;
     padding: .5%;
 
     @media @phone {
       width: 100%;
       align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      justify-content: space-evenly;
+      // flex-direction: column;
     }
-
-    a {
-      text-decoration: none;
-      color: @white;
+    .button {
+      color: white;
       font-family: "Roboto";
-      font-size: 2vw;
+      font-size: 2.3rem;
       font-weight: bold;
       padding: 2%;
-      margin: auto;
-      width: 50%;
       white-space: nowrap;
-      background-color: @secondary;
+      background-color: @primary;
       text-align: center;
-      // border: 1px solid pink;
-      border-radius: 2rem;
-      justify-content: space-between;
+      border: 2px solid @secondary;
+      width: 100px;
+      border-radius: 5rem;
+      box-shadow: 0 7px 1px @secondary;
+      cursor: pointer;
+      transition-duration: .5s;
+      -webkit-transition-duration: .5s; /* Safari */
+      flex-wrap: nowrap;
+    }
+    
+    .button:hover {
+      background-color: @blue;
+      color: @primary;
     }
 
-    a:hover{
-      background-color: @primary;
+    .button:active {
+      background-color: @blue;
+      box-shadow: 0 5px @primary;
+      transform: translateY(4px);
     }
   }
 }
 
-//Header Styles here

@@ -1,8 +1,6 @@
 body,
 html {
-  
-  background-color: @teal;
-  
+    background-color: @teal;
 }
 
 h1 {
@@ -10,11 +8,12 @@ h1 {
   text-align: center;
   color: @primary;
   font-weight: bold;
+  font-size: 6vw;
 }
 
 h4 {
   font-family: "Roboto";
-  font-size: 10vw;
+  font-size: 20px;
   text-align: center;
   color: @primary;
 }
@@ -23,14 +22,17 @@ p {
   font-family: "Roboto";
   text-align: center;
   color: @primary;
+  font-size: 16px ;
   padding-left: 10%;
   padding-right: 10%;
+  
+  // background-color: @secondary;
+  // border: 5px solid @orange;
   // font-weight: bold;
 }
 
 .mainContainer {
   min-height: 100%;
-  
   position: relative;
   background-color: @teal;
   // background-image: url(background.png);
@@ -40,30 +42,73 @@ p {
   // border: 1px solid green;
 }
 
-.button {
-  color: white;
-  font-family: "Roboto";
-  font-size: 4vh;
-  font-weight: bold;
-  padding: 2%;
-  margin: auto;
-  width: 50%;
-  white-space: nowrap;
-  background-color: @secondary;
-  text-align: center;
-  // border: 1px solid pink;
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s; /* Safari */
-  flex-wrap: nowrap;
-}
+.content-index {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 35px;
+    margin-top: 2%;
+  }
 
-.button:hover {
-  background-color: #c4c4c4;
-  color: @primary;
-}
+  @media @phone {
+    flex-direction: column;
+  }
+
+  .content-left {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    //margin-top: 6%;
+    margin-left:1.1%;
+    border: 2px solid @secondary;
+    border-radius: 2rem;
+    width: 28.5%;
+    @media @phone {
+      display: none;
+    }
+  } // close content-left
+
+  .content-right {
+    display: flex;
+    flex-direction:column;
+    justify-content: flext-start;
+    align-items: center;
+    margin-right: 1.1%;
+    border: 2px solid @secondary;
+    border-radius: 2rem;
+    width: 28.5%;
+    @media @phone {
+      display: none;
+    }
+  } // close content-right
+
+  .content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+
+    h1 {
+      margin-bottom: 0.5%;
+    }
+
+    p {
+      width: 96%;
+      font-size: 1.8rem;
+      @media @phone {
+        margin-top: 2%;
+        width: 96%;
+        font-size: 2.4rem;
+      }
+
+    }
+
+  } // close content-center
+
+} // close content-index
 
 #slideshow {
   overflow: hidden;
@@ -71,13 +116,13 @@ p {
   width: 50vw;
   margin: auto;
   margin-bottom: 1%;
-  border: 5px solid @orange;
+  // border: 5px solid @orange;
   border-radius: 2rem;
 }
 
 .slide-wrapper {
   width: 3500vw;
-  -webkit-animation: slide 10s ease infinite;
+  -webkit-animation: slide 20s ease infinite;
 }
 
 .slide {
